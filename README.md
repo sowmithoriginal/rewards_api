@@ -22,11 +22,11 @@ The Rewards API processes receipt data submitted via POST requests, calculates r
 
 ## Project Structure
 
-main.go       # Sets up the HTTP server and routes.
-handlers.go   # HTTP handler functions (SubmitReceiptHandler, RetrievePointsHandler).
-models.go     # Data structures (Receipt, Item, ReceiptResponse, PointsResponse).
-points.go     # Reward point calculation logic.
-storage.go    # File storage functions (saving and loading receipts).
+1. main.go       # Sets up the HTTP server and routes.
+2. handlers.go   # HTTP handler functions (SubmitReceiptHandler, RetrievePointsHandler).
+3. models.go     # Data structures (Receipt, Item, ReceiptResponse, PointsResponse).
+4. points.go     # Reward point calculation logic.
+5. storage.go    # File storage functions (saving and loading receipts).
 
 ## Endpoints
 
@@ -57,11 +57,6 @@ storage.go    # File storage functions (saving and loading receipts).
     go run main.go handlers.go models.go points.go storage.go
     ```
 
-    or (if all files are in the same directory):
-
-    ```bash
-    go run .
-    ```
 
 4.  **Test the API:**
 
